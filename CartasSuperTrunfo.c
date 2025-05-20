@@ -1,7 +1,6 @@
 #include <stdio.h> 
 
 int main (){
-    printf("Desafio Super Trunfo\n");
     char letra=' ' ;
     int populacao, pontosturisticos;
     char carta[3], cidade[30];
@@ -13,7 +12,7 @@ int main (){
     float area2, pib2;
 
     printf("Digite a letra da cidade:");
-    scanf("%c", &letra);
+    scanf("%s", &letra);
 
     printf("Digite o código da carta:");
     scanf("%s", &carta);
@@ -32,9 +31,11 @@ int main (){
 
     printf("Digite os Pontos Turísticos da cidade:");
     scanf("%d", &pontosturisticos);
- 
-    printf("Digite a letra da cidade 02:");
-    scanf("%c", &letra2);
+    printf("Digite a letra da cidade:");       
+    scanf("%s", &letra2);
+    
+    printf("Digite o código da carta:");
+    scanf("%s", &carta2);
 
     printf("Digite o nome da cidade:");
     scanf("%s", &cidade2);
@@ -52,35 +53,21 @@ int main (){
     scanf("%d", &pontosturisticos2);
 
     printf("Cidade: 01\n");
-
     printf("Estado: %c\n", letra);
-
     printf("Código: %s\n", carta);
-
     printf("Nome da cidade: %s\n", cidade);
-
     printf("População: %d\n", populacao);
-
     printf("Área: %f\n", area);
-
     printf("PIB: %f\n", pib);
-
     printf("Pontos Turísticos: %d\n", pontosturisticos);
-
-    printf("Cidade: 2\n");
-
+    printf("\n");
+    printf("Cidade: 02\n");
     printf("Estado: %c\n", letra2);
-
     printf("Código: %s\n", carta2);
-
     printf("Nome da cidade: %s\n", cidade2);
-
     printf("População: %d\n", populacao2);
-
     printf("Área: %f\n", area2);
-
     printf("PIB: %f\n", pib2);
-
     printf("Pontos Turísticos: %d\n", pontosturisticos2);
 
     return 0;
